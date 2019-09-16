@@ -1,5 +1,5 @@
 # limite = int(input("de um limite: "))
-limite = 1000
+limite = 10000
 i = 0
 x = 0
 primos = []
