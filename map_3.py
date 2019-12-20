@@ -14,10 +14,10 @@ dicionario = [{
 
 def rico(*args, **kwargs):
     for nome, balance in kwargs:
-        if balance.values == 100:
+        if balance.values >= 100:
             print('Rico')
         else:
             print('pobre')
 
-map_dict = (list(map(rico(kwargs=dicionario), dicionario)))
+map_dict = list(map(rico(dicionario), dicionario))
 print(map_dict)
